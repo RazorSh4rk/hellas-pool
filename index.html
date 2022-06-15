@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellas pool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <div class="topnav" id="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#termekek">Termekek</a>
+        <a href="#szolgaltatasok">Szolgaltatasok</a>
+        <a href="#contact">Kontakt</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">&#9776;</a>
+    </div>
+    <!---->
+
+    <div class="header">
+        <!--WAVES-->
+        <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" class="waves">
+            <defs>
+                <style type="text/css">
+                    .wave {
+                        animation: wave 8s linear infinite;
+                    }
+
+                    .wave1 {
+                        animation: wave1 10s linear infinite;
+                    }
+
+                    .wave2 {
+                        animation: wave2 12s linear infinite;
+                    }
+
+                    @keyframes wave {
+                        0% {
+                            transform: translateX(0%);
+                        }
+
+                        100% {
+                            transform: translateX(100%);
+                        }
+                    }
+
+                    @keyframes wave1 {
+                        0% {
+                            transform: scaleY(1.2) translateX(0%);
+                        }
+
+                        100% {
+                            transform: scaleY(1.2) translateX(100%);
+                        }
+                    }
+
+                    @keyframes wave2 {
+                        0% {
+                            transform: scaleY(.8) translateX(0%);
+                        }
+
+                        100% {
+                            transform: scaleY(.8) translateX(100%);
+                        }
+                    }
+                </style>
+                <path id='sineWave' fill="#0099ff" fill-opacity="0.2"
+                    d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+            </defs>
+            <use class="wave" href="#sineWave" />
+            <use class="wave" x="-100%" href="#sineWave" />
+            <use class="wave1" href="#sineWave" />
+            <use class="wave1" x="-100%" href="#sineWave" />
+            <use class="wave2" href="#sineWave" />
+            <use class="wave2" x="-100%" href="#sineWave" />
+        </svg>
+        <!---->
+
+        <div class="text header-text">
+            <lorem></lorem>
+        </div>
+    </div>
+
+    <!--SLIDER-->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/1.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!---->
+
+    <script src="https://cdn.rawgit.com/RazorSh4rk/lorem-inject/72c07c26/lorem.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
